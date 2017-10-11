@@ -11,7 +11,6 @@ def read_data_nested(filename):
                 sales_by_person[name]['number'] = sales_by_person[name]['number'] + number
             else:
                 sales_by_person[name] = {'price': amount, 'number': number}
-    print sales_by_person
     return sales_by_person
 
 
