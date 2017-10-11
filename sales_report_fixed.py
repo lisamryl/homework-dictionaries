@@ -1,12 +1,3 @@
-def read_data(filename):
-    with open(filename) as file_data:
-        sales_by_person = {}
-        for line in file_data:
-            name, amount, number = line.rstrip().split('|')
-            sales_by_person[name] = sales_by_person.get(name, 0) + int(number)
-    return sales_by_person
-
-
 def read_data_nested(filename):
     with open(filename) as file_data:
         name = None
